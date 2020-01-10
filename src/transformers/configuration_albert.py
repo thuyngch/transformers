@@ -71,11 +71,11 @@ class AlbertConfig(PretrainedConfig):
                 The maximum sequence length that this model might ever be used with. Typically set this to something
                 large (e.g., 512 or 1024 or 2048).
             type_vocab_size (:obj:`int`, optional, defaults to 2):
-                The vocabulary size of the `token_type_ids` passed into `AlbertModel`.
+                The vocabulary size of the `token_type_ids` passed into :class:`~transformers.AlbertModel`.
             initializer_range (:obj:`float`, optional, defaults to 0.02):
                 The standard deviation of the truncated_normal_initializer for initializing all weight matrices.
             layer_norm_eps (:obj:`float`, optional, defaults to 1e-12):
-                The epsilon used by LayerNorm.
+                The epsilon used by the layer normalization layers.
 
         Example::
 
