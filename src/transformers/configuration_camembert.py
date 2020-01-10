@@ -29,4 +29,8 @@ CAMEMBERT_PRETRAINED_CONFIG_ARCHIVE_MAP = {
 
 
 class CamembertConfig(RobertaConfig):
+    r"""
+        The :class:`~transformers.CamembertConfig` class directly inherits :class:`~transformers.BertConfig`.
+        It reuses the same defaults. Please check the parent class for more information.
+    """
     pretrained_config_archive_map = CAMEMBERT_PRETRAINED_CONFIG_ARCHIVE_MAP
