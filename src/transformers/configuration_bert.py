@@ -65,7 +65,7 @@ class BertConfig(PretrainedConfig):
         Args:
             vocab_size (:obj:`int`, optional, defaults to 30522):
                 Vocabulary size of the BERT model. Defines the different tokens that
-                can be represented by the `inputs_ids` passed to the forward method of `BertModel`.
+                can be represented by the `inputs_ids` passed to the forward method of :class:`~transformers.BertModel`.
             hidden_size (:obj:`int`, optional, defaults to 768):
                 Size of the encoder layers and the pooler layer.
             num_hidden_layers (:obj:`int`, optional, defaults to 12):
@@ -81,7 +81,7 @@ class BertConfig(PretrainedConfig):
                 The dropout probabilitiy for all fully connected layers in the embeddings, encoder, and pooler.
             attention_probs_dropout_prob (:obj:`float`, optional, defaults to 0.1):
                 The dropout ratio for the attention probabilities.
-            max_position_embeddings(:obj:`int`, optional, defaults to 512):
+            max_position_embeddings (:obj:`int`, optional, defaults to 512):
                 The maximum sequence length that this model might ever be used with.
                 Typically set this to something large just in case (e.g., 512 or 1024 or 2048).
             type_vocab_size (:obj:`int`, optional, defaults to 2):

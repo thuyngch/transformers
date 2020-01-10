@@ -45,7 +45,7 @@ class AlbertConfig(PretrainedConfig):
         Args:
             vocab_size (:obj:`int`, optional, defaults to 30000):
                 Vocabulary size of the ALBERT model. Defines the different tokens that
-                can be represented by the `inputs_ids` passed to the forward method of `AlbertModel`.
+                can be represented by the `inputs_ids` passed to the forward method of :class:`~transformers.AlbertModel`.
             embedding_size (:obj:`int`, optional, defaults to 128):
                 Size of vocabulary embeddings.
             hidden_size (:obj:`int`, optional, defaults to 4096):
