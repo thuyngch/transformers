@@ -61,7 +61,7 @@ class CTRLConfig(PretrainedConfig):
                 The dropout ratio for the attention.
             layer_norm_epsilon (:obj:`float`, optional, defaults to 1e-6):
                 The epsilon to use in the layer normalization layers
-            initializer_range (:obj:`float`, optional, defaults to 16):
+            initializer_range (:obj:`float`, optional, defaults to 0.02):
                 The standard deviation of the truncated_normal_initializer for initializing all weight matrices.
     """
 
