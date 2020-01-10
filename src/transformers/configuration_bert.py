@@ -50,8 +50,6 @@ BERT_PRETRAINED_CONFIG_ARCHIVE_MAP = {
 
 class BertConfig(PretrainedConfig):
     r"""
-        :class:`~transformers.BertConfig` is the configuration class to store the configuration of a
-        `BertModel`.
         This is the configuration class to store the configuration of a :class:`~transformers.BertModel`.
         It is used to instantiate an BERT model according to the specified arguments, defining the model
         architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of
