@@ -104,7 +104,7 @@ class AlbertConfig(PretrainedConfig):
 
     def __init__(
         self,
-        vocab_size_or_config_json_file=30000,
+        vocab_size=30000,
         embedding_size=128,
         hidden_size=4096,
         num_hidden_layers=12,
