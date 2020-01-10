@@ -43,7 +43,7 @@ class RobertaConfig(BertConfig):
         Configuration objects inherit from  :class:`~transformers.PretrainedConfig` and can be used
         to control the model outputs. Read the documentation from  :class:`~transformers.PretrainedConfig`
         for more information.
-        
+
         The :class:`~transformers.RobertaConfig` class directly inherits :class:`~transformers.BertConfig`.
         It reuses the same defaults. Please check the parent class for more information.
     """
