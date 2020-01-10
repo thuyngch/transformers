@@ -34,4 +34,8 @@ ROBERTA_PRETRAINED_CONFIG_ARCHIVE_MAP = {
 
 
 class RobertaConfig(BertConfig):
+    r"""
+        The :class:`~transformers.RobertaConfig` class directly inherits :class:`~transformers.BertConfig`.
+        It reuses the same defaults. Please check the parent class for more information.
+    """
     pretrained_config_archive_map = ROBERTA_PRETRAINED_CONFIG_ARCHIVE_MAP
