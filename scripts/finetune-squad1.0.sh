@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 SQUAD_DIR="/home/cybercore/thuync/datasets/SQuAD1.0"
 OUT_DIR="/home/member/Workspace/thuync/checkpoints/wwm_uncased_finetuned_squad"
-BATCH_SIZE=48
+BATCH_SIZE=24
 
 export CUDA_VISIBLE_DEVICES=2,3
-NUM_GPUS=4
+NUM_GPUS=2
 
 python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
 	examples/run_squad.py \
