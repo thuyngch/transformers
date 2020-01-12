@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 export SQUAD_DIR=/home/cybercore/thuync/datasets/SQuAD1.0
-export CUDA_VISIBLE_DEVICES=0,1
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
-python -m torch.distributed.launch --nproc_per_node=2 \
+python -m torch.distributed.launch --nproc_per_node=4 \
 	examples/run_squad.py \
 	--model_type bert \
 	--model_name_or_path bert-base-cased \
