@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-SQUAD_DIR="/home/cybercore/thuync/datasets/SQuAD1.0"
+SQUAD_DIR="/home/member/Workspace/thuync/datasets/SQuAD1.0"
 OUT_DIR="/home/member/Workspace/thuync/checkpoints/wwm_uncased_finetuned_squad"
 BATCH_SIZE=24
 
