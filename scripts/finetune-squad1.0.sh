@@ -21,4 +21,4 @@ python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
 	--doc_stride 128 \
 	--output_dir ${OUT_DIR} \
 	--per_gpu_train_batch_size ${BATCH_SIZE} \
-	--gradient_accumulation_steps 12
+	--gradient_accumulation_steps 48
