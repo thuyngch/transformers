@@ -16,7 +16,7 @@ export CUDA_VISIBLE_DEVICES=2,3
 NUM_GPUS=2
 
 python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
-	tools/squad.py \
+	tools/infer_single_sample.py \
 	--model_type ${MODEL} \
 	--model_name_or_path ${OUT_DIR} \
 	--do_eval \

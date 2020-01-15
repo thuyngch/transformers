@@ -200,6 +200,17 @@ def evaluate(args, model, tokenizer, prefix=""):
 			tokenizer,
 		)
 
+	# Print
+	print("\n[Context]\n{}\n".format(examples[0].context_text))
+	for idx, (example, prediction) in enumerate(zip(examples, predictions)):
+		print("[Sample {}]".format(idx+1))
+		print("Question: {}".format(example.question_text))
+		print("Answer: {}".format(predictions[prediction]))
+		print("Possible answers:")
+		for ans in example.answers:
+			print("\t{}".format(ans['text']))
+		print()
+
 	# Compute the F1 and exact scores.
 	results = squad_evaluate(examples, predictions)
 	return results
