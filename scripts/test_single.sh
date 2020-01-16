@@ -15,6 +15,7 @@ WDECAY=1e-6
 export CUDA_VISIBLE_DEVICES=2,3
 NUM_GPUS=2
 
+rm cached_dev_bert_squad1_384
 python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
 	tools/infer_single_sample.py \
 	--model_type ${MODEL} \
@@ -22,7 +23,7 @@ python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
 	--do_eval \
 	--do_lower_case \
 	--train_file "${SQUAD_DIR}/train-v1.1.json" \
-	--predict_file "${SQUAD_DIR}/test.json" \
+	--predict_file "${SQUAD_DIR}/toeic.json" \
 	--learning_rate ${LR} \
 	--num_train_epochs ${EPOCHS} \
 	--max_seq_length ${MAX_LEN} \
