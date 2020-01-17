@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-SQUAD_DIR="/home/member/Workspace/thuync/datasets/SQuAD1.0"
-OUT_DIR="/home/member/Workspace/thuync/checkpoints/bert_squad1"
+SQUAD_DIR="/home/member/Workspace/thuync/datasets/SQuAD2.0"
+OUT_DIR="/home/member/Workspace/thuync/checkpoints/bert_squad2"
 
 MODEL="bert"
 MODEL_NAME="bert-base-cased"
@@ -23,8 +23,8 @@ python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
 	--do_train \
 	--do_eval \
 	--do_lower_case \
-	--train_file "${SQUAD_DIR}/train-v1.1.json" \
-	--predict_file "${SQUAD_DIR}/dev-v1.1.json" \
+	--train_file "${SQUAD_DIR}/train-v2.0.json" \
+	--predict_file "${SQUAD_DIR}/dev-v2.0.json" \
 	--learning_rate ${LR} \
 	--num_train_epochs ${EPOCHS} \
 	--max_seq_length ${MAX_LEN} \
