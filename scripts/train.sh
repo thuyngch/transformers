@@ -17,7 +17,7 @@ export CUDA_VISIBLE_DEVICES=2,3
 NUM_GPUS=2
 
 python -m torch.distributed.launch --nproc_per_node=${NUM_GPUS} \
-	tools/squad/train.py \
+	tools/squad.py \
 	--model_type ${MODEL} \
 	--model_name_or_path ${MODEL_NAME} \
 	--do_train \
